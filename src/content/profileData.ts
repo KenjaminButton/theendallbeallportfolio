@@ -16,7 +16,7 @@ export const PROFILE = {
     "Passionate about building innovative solutions and exploring the intersection of AI and software development",
   website: "https://kenjaminbutton.com",
   repo: "https://github.com/KenjaminButton/",
-  avatarUrl: "https://techtim42.com/techtim42.webp",
+  avatarUrl: "/avatar.webp",
   shortIntros: [
     "💻 Software/AI Engineer | Open Source Lover | Self-starter",
     "☁️ AWS Professional | AWS Community Builder",
