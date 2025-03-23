@@ -2,20 +2,20 @@ export const PROFILE = {
   site: {
     SEO: {
       //     more complicated description for SEO
-      title: "Tech Tim (@TechTim42) - Learn, Share and Grow ❤️",
+      title: "KenjaminButton - Your Personal Portfolio",
       description:
-        "Learn, Share and Grow ❤️ -- Software Engineer | AWS Professional | Open Source Lover  --☘️ Be more productive, Better in communicating, Contribute more to community. | Tech Tim's New Astro Portfolio",
+        "KenjaminButton's Portfolio - Showcasing technical skills and projects",
     },
   },
-  timezone: "Australia/Sydney",
-  language: "en-AU",
-  firstName: "Tim",
-  name: "Tech Tim",
-  headLine: "Learn, Share and Grow ❤️",
+  timezone: "America/Los_Angeles",
+  language: "en-US",
+  firstName: "Kenneth",
+  name: "KenjaminButton",
+  headLine: "Software Engineer | AI Enthusiast",
   headLine2:
-    "I enjoy providing software solutions and bring ideas to life and solve real-world problems.",
-  website: "https://techtim42.com",
-  repo: "https://github.com/tim-hub/techtim-astro-bento-portfolio",
+    "Passionate about building innovative solutions and exploring the intersection of AI and software development",
+  website: "https://kenjaminbutton.com",
+  repo: "https://github.com/KenjaminButton/",
   avatarUrl: "https://techtim42.com/techtim42.webp",
   shortIntros: [
     "💻 Software/AI Engineer | Open Source Lover | Self-starter",
