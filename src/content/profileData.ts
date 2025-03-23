@@ -18,7 +18,7 @@ export const PROFILE = {
   repo: "https://github.com/KenjaminButton/",
   avatarUrl: "/avatar.webp",
   shortIntros: [
-    "💻 Software/AI Engineer | Open Source Lover | Self-starter",
+    "💻 Full Stack Engineer | AI Solutions Architect | Tech Innovator",
     "☁️ AWS Professional | AWS Community Builder",
     "☘️ Passionate about Dev Experience(DX) Improvement and bringing ideas to life",
     "📈 Unprofessional Investor",
