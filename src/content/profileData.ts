@@ -19,11 +19,14 @@ export const PROFILE = {
   avatarUrl: "/kenjamin.jpg",
   shortIntros: [
     "💻 Full Stack Engineer | AI Solutions Architect | Tech Innovator",
-    "☁️ AWS Professional & GCP Enthusiast | Cloud Community Builder driving innovation and collaboration",
-    "🌱 Committed to teaching tech and crafting full stack applications that bring ideas to life",
-    "🏀 Unprofessional Sports Card Investor📉",
-    "📷 Passionate Photo Blogger",
-    "🐾 Dog Lover| 📙 Book Reader | 🚴🏼 Bicycle Traveler",
+    "🚀 Transforming visions into reality through innovative technology and creative solutions.",
+    "☁️ AWS Professional & GCP Enthusiast | A passionate cloud community builder driving collaboration.",
+    "🌱 Committed to mentoring and empowering the next generation of tech enthusiasts.",
+    "🏀 Amateur Sports Card Aficionado | Balancing numbers and nostalgia in the world of sports memorabilia.",
+    "📷 Visual Storyteller capturing moments that inspire and ignite imagination.",
+    "🐾 Dog Enthusiast sharing life with my furry companions on my adventures.",
+    "📙 Bookworm forever lost in stories, drawing inspiration from pages that transport me.",
+    "🚴🏼 Bicycle Explorer pedaling through life in search of adventure and hidden gems."
   ],
   words: ["Clear eyes, full hearts, can't lose! 🏈"], 
   skills: [
