@@ -1,7 +1,8 @@
 ---
 import { getAndGroupUniqueTags } from "../../lib/utils";
 import { PROFILE } from "../../content/profileData";
-
+import { SkillBadge } from '../ui/SkillBadge';
+import { SKILL_ICONS } from '../../lib/skillIcons';
 
 const tagsMap = await getAndGroupUniqueTags();
 
@@ -22,35 +23,18 @@ const skills = PROFILE.skills;
   <p class="text-sm font-light">
     I use the following technologies:
   </p>
-  <ul class="list-inside list-disc">
+  <div class="flex flex-wrap gap-2 mt-2">
     {
-      skills.map((skill) => {
-        if (tagsMap.has(skill)) {
-          return (
-
-            <li>
-              <a href=`/tags/${skill}` class=" hover:font-bold">
-                {skill}
-              </a>
-            </li>
-          )
-        } else {
-          return (
-            <li>
-              <span>
-                {skill}
-              </span>
-            </li>
-          )
-        }
-
-      })
+      skills.map((skill) => (
+        <SkillBadge
+          skill={skill}
+          color={SKILL_ICONS[skill]?.color}
+        />
+      ))
     }
-  </ul>
+  </div>
 
   <p class="text-sm font-light">
-    More about my <a href="/projects" class="underline hover:font-bold">Projects</a> and my <a href="/experiences"
-                                                                                               class="underline hover:font-bold">Experiences</a>.
+    I am a software engineer with a passion for building things that make a difference. I love to learn new technologies and share my knowledge with others.
   </p>
 </div>
-
