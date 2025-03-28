@@ -5,9 +5,7 @@ import {getUserTimeZoneInBrowser} from "@/lib/utils.ts";
 const NowTime = ({timezone}: { timezone?: string }) => {
   const [currentTime, setCurrentTime] = useState<string>('');
 
-
   const secondUpdateDuration = 1001; // be naughty
-
 
   // get user timezone
   const browserTimezone = getUserTimeZoneInBrowser();
@@ -30,6 +28,7 @@ const NowTime = ({timezone}: { timezone?: string }) => {
   const theDate = dateStrings.slice(0, 4).join(' ');
   const theTime = dateStrings.slice(4).join(' ');
 
+  const displayTimezone = usingTimezone === "America/Los_Angeles" ? "Pacific Time" : usingTimezone;
 
   return (
     <>
@@ -38,7 +37,7 @@ const NowTime = ({timezone}: { timezone?: string }) => {
           <div>
             <p>{theDate}</p>
             <p className={"text-2xl my-2"}>{theTime}</p>
-            <p className="text-sm text-gray-500">{usingTimezone}</p>
+            <p className="text-sm text-gray-500">{displayTimezone}</p>
           </div>
           {!timezone && (
             <span className="relative flex h-3 w-3">
