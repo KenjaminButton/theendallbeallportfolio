@@ -13,7 +13,7 @@ export const PROFILE = {
   name: "KenjaminButton",
   headLine: "Software Engineer | AI Enthusiast",
   headLine2:
-    "Passionate about building innovative solutions and exploring the intersection of AI and software development",
+    "Driven to create innovative tech solutions at the intersection of AI and software development, I thrive on turning ideas into reality.",
   website: "https://kenjaminbutton.com",
   repo: "https://github.com/KenjaminButton/",
   avatarUrl: "/kenjamin.jpg",
@@ -57,16 +57,11 @@ export const PROFILE = {
     "Jenkins"
   ],
   links: {
-    github: "https://github.com/tim-hub",
-    medium: "https://medium.com/@TechTim42",
-    twitter: "https://twitter.com/TechTim42",
-    bluesky: "https://bsky.app/profile/techtim.bsky.social",
-    thread: "https://www.threads.net/@techtim2024",
-    mastodon: "https://mastodon.social/@techtim42",
-    youtube: "https://www.youtube.com/@techtim42",
-    stackoverflow: "https://stackoverflow.com/users/5249708/tim",
-    devto: "https://dev.to/timhub",
-    goodreads: "",
+    github: "https://github.com/kenjaminbutton",
+    linkedin: "https://www.linkedin.com/in/kennethpchang",
+    medium: "https://medium.com/kenjaminbutton",
+    goodreads: "https://www.goodreads.com/user/show/189037279-kenjamin-button",
+    instagram: "http://instagram.com/brotherkendrick",
   },
   studies: [
     // studies, qualifications and certifications
