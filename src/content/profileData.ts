@@ -11,10 +11,10 @@ export const PROFILE = {
   language: "en-US",
   firstName: "Kenneth",
   name: "KenjaminButton",
-  headLine: "Software Engineer | AI Enthusiast",
+  headLine: "Technical Problem Solver | Strategic Communicator",
   headLine2:
-    "Driven to create innovative tech solutions at the intersection of AI and software development, I thrive on turning ideas into reality.",
-  website: "https://kenjaminbutton.com",
+    "Applying technical insights to streamline processes and improve operational efficiency. Skilled at bridging the gap between technical teams and stakeholders in various sectors.",
+  website: "https://www.kenjaminbutton.com",
   repo: "https://github.com/KenjaminButton/",
   avatarUrl: "/kenjamin.jpg",
   shortIntros: [
