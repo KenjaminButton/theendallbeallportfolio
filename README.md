@@ -1,9 +1,9 @@
-# TechTim's Astro Bento Portfolio
+# Kenjamin Button's Astro Bento Portfolio
 
 This template helps you build a portfolio using Astro, Typescript, React, Tailwind CSS, and Shadcn UI.
 
-- [Live Demo](https://techtim42.com)
-- [GitHub Repo](https://github.com/tim-hub/techtim-astro-bento-portfolio)
+- [Live Demo](https://kenjaminbutton.com)
+- [GitHub Repo](https://github.com/kenjaminbutton)
 
 ## Technologies Used
 
@@ -29,28 +29,28 @@ To install and run the project locally, follow these steps:
 1. Clone this repository:
 
    ```bash
-   git clone https://github.com/tim-hub/techtim-astro-bento-portfolio
+   git clone https://github.com/kenjaminbutton/portfolio.git
    ```
 
 2. Navigate to the project directory:
 
    ```bash
-   cd techtim-astro-bento-portfolio
+   cd portfolio
    ```
 
 3. Install the dependencies:
 
    ```bash
-   pnpm install
+   npm install
    ```
 
 4. Start the development server:
 
    ```bash
-   pnpm run dev
+   npm run dev
    ```
 
-5. Open your browser and visit `http://localhost:4312` to see your portfolio in action.
+5. Open your browser and visit `http://localhost:4321` to see your portfolio in action.
 6. Config your site
    1. Edit `src/content/profileData.ts` to add your profile data
    2. Edit `astro.config.mjs` to change the site information
