@@ -85,7 +85,5 @@ export const PROFILE = {
       title: "Udacity Front End Developer",
       institution: "Nanodegree",
     },
-
-
   ],
 };
