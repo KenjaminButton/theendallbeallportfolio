@@ -66,24 +66,26 @@ export const PROFILE = {
   studies: [
     // studies, qualifications and certifications
     {
-      title: "Master of Applied Computing",
-      level: "Master",
+      title: "University of California, Santa Barbara",
+      level: "Bachelors",
     },
     {
-      title: "AWS Cloud Professional",
-      institution: "AWS",
+      title: "AWS Certified Cloud Practitioner",
+      level: "AWS Certification",
     },
     {
-      title: "Neo4j Certified Professional",
-      institution: "Neo4j",
+      title: "Udacity Full Stack Developer",
+      institution: "Nanodegree",
     },
     {
-      title: "ICAgile Certified Professional",
-      institution: "ICP",
+      title: "Udacity Data Structures and Algorithms",
+      institution: "Nanodegree",
     },
     {
-      title: "Full Stack Observability Practitioner",
-      institution: "New Relic",
+      title: "Udacity Front End Developer",
+      institution: "Nanodegree",
     },
+
+
   ],
 };
