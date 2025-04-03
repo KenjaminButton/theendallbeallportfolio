@@ -60,6 +60,13 @@ const SITE = PROFILE.site
         Projects
       </a>
       <a
+        href="/experiences"
+        class={buttonVariants({variant: 'ghost'})}
+        style="color: #0d87a3;"
+      >
+        Experiences
+      </a>
+      <a
         href={PROFILE.repo}
         target="_blank"
         rel="noreferrer"
@@ -91,6 +98,13 @@ const SITE = PROFILE.site
       Projects
     </a>
     <a
+      href="/experiences"
+      class={buttonVariants({variant: 'ghost'})}
+      style="display: block; margin-bottom: 8px; color: #0d87a3;"
+    >
+      Experiences
+    </a>
+    <a
       href={PROFILE.repo}
       target="_blank"
       rel="noreferrer"
@@ -102,7 +116,7 @@ const SITE = PROFILE.site
   </nav>
 </header>
 
-<script is:inline client:load>
+<script is:inline>
   // Hamburger button
   const hamburgerButton = document.getElementById('hamburger-button');
   const mobileMenu = document.getElementById('mobile-menu');
