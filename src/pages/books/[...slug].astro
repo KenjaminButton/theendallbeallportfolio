@@ -1,6 +1,8 @@
 ---
 import { getCollection } from 'astro:content';
+import type { CollectionEntry } from 'astro:content';
 import MDXLayout from "../../layouts/MDXLayout.astro";
+import { PROFILE } from "../../content/profileData";
 
 
 /**
@@ -13,7 +15,11 @@ export async function getStaticPaths() {
   }));
 }
 
-const {entry} = Astro.props;
+interface Props {
+  entry: CollectionEntry<'books'>;
+}
+
+const { entry }: Props = Astro.props;
 const {author, readYear} = entry.data;
 const {Content} = await entry.render();
 ---
@@ -27,5 +33,6 @@ const {Content} = await entry.render();
     readYear &&
     <div class="text-sm font-light italic">Read Year: {readYear}</div>
   }
+  <div class="text-sm font-light italic mb-4">Reviewer: {PROFILE.name}</div>
   <Content/>
 </MDXLayout>

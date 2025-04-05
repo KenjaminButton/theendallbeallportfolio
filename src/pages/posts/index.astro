@@ -1,5 +1,5 @@
 ---
-import ProjectCard from 'src/components/ProjectCard.astro'
+import ProjectCard from '../../components/ProjectCard.astro'
 import { getCollection } from "astro:content";
 
 
@@ -11,12 +11,12 @@ const posts = await getCollection('posts');
 
 // sort projects by dateStart DESC
 posts.sort((a: any, b: any) => {
-  return new Date(b.data.startDate) - new Date(a.data.startDate);
+  return new Date(b.data.startDate).getTime() - new Date(a.data.startDate).getTime();
 });
 ---
 
-<IndexPageLayout title="Blog" description="Crafting Connections: A Journey Through My Online World."
-                 subTitle="Reflections & Ruminations">
+<IndexPageLayout title="Blog" description="Thoughts, tutorials, and reflections on technology, programming, and personal interests."
+                 subTitle="Blog Posts">
 
   <div class="grid grid-cols-3 gap-3">
     {

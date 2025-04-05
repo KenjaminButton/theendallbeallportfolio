@@ -10,7 +10,7 @@ import ContentTags from "../../components/ContentTags.astro";
 const books = await getCollection('books');
 
 books.sort((a, b) => {
-  return new Date(b.data.startDate) - new Date(a.data.startDate);
+  return new Date(b.data.startDate).getTime() - new Date(a.data.startDate).getTime();
 });
 ---
 <IndexPageLayout title="Books I have read"
@@ -25,8 +25,8 @@ books.sort((a, b) => {
             <TableCell className="font-medium ">
               <div class="flex flex-col gap-1 min-w-20">
                 <a
-                  href={'/books/' + entry.slug ?? ''}
-                  class={`font-semibold hover:font-extrabold ${entry?.slug ? 'text-primary' : 'text-foreground'}`}
+                  href={'/books/' + entry.slug}
+                  class={`font-semibold hover:underline ${entry?.slug ? 'text-primary' : 'text-foreground'}`}
                 >
                   {entry.data.title}
                 </a>
