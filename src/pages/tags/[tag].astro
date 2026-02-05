@@ -10,25 +10,21 @@ import { getAndGroupUniqueTags } from "../../lib/utils";
  **/
 export async function getStaticPaths() {
   const tagItemsMap = await getAndGroupUniqueTags();
-  console.log('tagItemsMap', tagItemsMap);
 
-  const result = []
-  tagItemsMap.forEach(
-    (items, tag) => {
-      result.push({
-        params: {tag}, props: {items},
-      });
-    }
-  );
-  console.log('result', result, Object.keys(tagItemsMap));
+  const result = [];
+  tagItemsMap.forEach((items, tag) => {
+    result.push({
+      params: { tag: tag.replaceAll("/", "-") },
+      props: { items, originalTag: tag },
+    });
+  });
   return result;
 }
 
-const {tag} = Astro.params;
-const {items} = Astro.props;
+const { tag } = Astro.params;
+const { items, originalTag } = Astro.props;
 ---
-<IndexPageLayout title={tag} description="A new dimension to access content of this website" subTitle={tag}>
- <div class="flex flex-col gap-3">
+<IndexPageLayout title={originalTag} description="..." subTitle={originalTag}>
   {
     items?.map((post) =>
       <>
