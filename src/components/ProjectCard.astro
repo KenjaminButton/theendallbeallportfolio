@@ -2,7 +2,6 @@
 import { Card as ShadcnCard } from './ui/card'
 import { Badge } from './ui/badge'
 
-
 const {
   as: Tag = 'a',
   class: className,
@@ -12,9 +11,8 @@ const {
   imagePath,
   altText,
   dateStart,
+  dateEnd,
 } = Astro.props
-
-
 ---
 
 <Tag href={href} class={`${className}`}>
@@ -32,8 +30,9 @@ const {
       <h4 class="text-muted-foreground line-clamp-3">{subheading}</h4>
     </div>
     <div class="flex flex-wrap px-5 py-2 sr-only">
-      <Badge variant="outline">{dateStart}</Badge>
+      <Badge variant="outline">
+        {dateStart} - {dateEnd ? dateEnd : "Present"}
+      </Badge>
     </div>
-    <!--<slot />-->
   </ShadcnCard>
 </Tag>
