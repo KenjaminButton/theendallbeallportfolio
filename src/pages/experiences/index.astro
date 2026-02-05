@@ -35,7 +35,7 @@ experiences.sort((a, b) => {
                   {entry.data.title}
                 </a>
                 <div class="mb-4 text-sm">
-                  {formateLocalMonth(entry.data.startDate)} - {formateLocalMonth(entry.data.endDate)}
+                  {formateLocalMonth(entry.data.startDate)} - {entry.data.endDate ? formateLocalMonth(entry.data.endDate) : 'Present'}
                 </div>
 
               </div>
